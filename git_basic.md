@@ -4,9 +4,9 @@
 
 >git 指令了练习游戏
 
--[try git][2]基本指令练习
+-[try git][2]:基本指令练习
 
--[learnGitBranching][3]理解branch，练习指令。
+-[learnGitBranching][3]:理解branch，练习指令。
 (搜索方法：google->github->branch->(选择)pcottle/learnGitBranching)
 
 >测试git 
@@ -43,10 +43,14 @@
 
 *16、 能不能用一个不同的操作步骤完成以上事情？
 
+>生成SSH密钥z指令(采用ssh协议通讯时)
+
+* $ ssh-keygen
 
 
 
 
-[1] http://git-scm.com/
-[2] http://try.github.io/levels/1/challenges/1
-[3] http://pcottle.github.io/learnGitBranching/
+
+[1]: http://git-scm.com/
+[2]: http://try.github.io/levels/1/challenges/1
+[3]: http://pcottle.github.io/learnGitBranching/
