@@ -4,9 +4,9 @@
 
 >git 指令了练习游戏
 
--[try git][2]基本指令练习
+-[try git][2]:基本指令练习
 
--[learnGitBranching][3]理解branch，练习指令。
+-[learnGitBranching][3]:理解branch，练习指令。
 (搜索方法：google->github->branch->(选择)pcottle/learnGitBranching)
 
 >测试git 
