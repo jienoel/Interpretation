@@ -1,4 +1,5 @@
-#Ubuntu12.04安装VirtualBox[参考一][1]、[参考二][2]
+#Ubuntu12.04安装VirtualBox
+####[参考一][1]、[参考二][2]
 
 * 1、终端命令 编辑sources.list
 	
