@@ -1,5 +1,5 @@
 #Ubuntu12.04安装VirtualBox
-####[参考一][1]、[参考二][2]
+
 
 * 1、终端命令 编辑sources.list
 	
@@ -57,6 +57,9 @@
       去[官网][3]下载 VirtualBox 4.1.20 Oracle VM VirtualBox Extension Pack  （4.1.20是当前最新版本号）. 双击安装即可。
 
 * [virtualBox用户手册][4]
+
+
+####[参考网站一][1]、[参考网站二][2]
 
 
 [1]: http://my.oschina.net/scorpius/blog/68289
