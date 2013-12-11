@@ -47,6 +47,6 @@
 
 
 
-[1] http://git-scm.com/
-[2] http://try.github.io/levels/1/challenges/1
-[3] http://pcottle.github.io/learnGitBranching/
+[1]: http://git-scm.com/
+[2]: http://try.github.io/levels/1/challenges/1
+[3]: http://pcottle.github.io/learnGitBranching/
