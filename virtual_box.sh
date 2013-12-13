@@ -2,8 +2,11 @@
 #virsual_box.sh
 #install or remove virsualBox
 
+#1 for installing and 2 for removing
 ins_rm=$1
+#user's password
 pwd=$2
+
 if [ $3="" ] 
 then echo "user name isn't provided ,we use the default name which is n1"
      user=n1
