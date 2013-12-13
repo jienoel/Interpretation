@@ -2,8 +2,11 @@
 #ibus1.sh
 #to install or remove ibus
 
+#1 for installing and 2 for removing
 ins_rm=$1
+#user's password
 pwd=$2
+
 case $ins_rm in
 1)echo "install ibus & ibus-pinyin"
 #install ibus & ibus-pinyin
