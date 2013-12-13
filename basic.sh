@@ -2,8 +2,11 @@
 #basic.sh
 #control centre
 
+#1 for installing and 2 for removing
 ins_rm=$1
+#user's password
 pwd=$2
+#the user's name
 user=$3
 
 #install or remove ibus
