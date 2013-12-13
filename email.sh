@@ -2,7 +2,9 @@
 #mail.sh
 #install or remove mail (evolution)
 
+#1 for installing and 2 for removing
 ins_rm=$1
+#user's password
 pwd=$2
 
 case $ins_rm in
