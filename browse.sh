@@ -2,7 +2,9 @@
 #browse.sh
 #install or remove chrome
 
+#1 for installing and 2 for removing
 ins_rm=$1
+#user's password
 pwd=$2
 
 case $ins_rm in
