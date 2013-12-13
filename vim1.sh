@@ -7,7 +7,9 @@
 #echo "321456987" "y" | sudo -S apt-get install vim
 
 #pwd="321456987"
+#1 for installing and 2 for removing
 ins_rm=$1
+#user's password
 pwd=$2
 #yes="y"
 
