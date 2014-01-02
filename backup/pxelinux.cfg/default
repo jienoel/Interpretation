@@ -1,0 +1,30 @@
+#include ubuntu-installer/amd63/boot-screens/txt.cfg
+#default ubuntu-installer/amd64/boot-screens/vesamenu.c32
+DEFAULT ubuntu_12.04_amd64
+PROMPT 1
+TIMEOUT 0
+
+LABEL ubuntu_12.04_amd64
+        KERNEL /ubuntu-installer/amd64/linux
+
+###unattended networking install ubuntu12.04 -using preseeding 
+	APPEND auto=true priority=critical interface=auto url=http://172.20.100.1/ubuntu/ps4.cfg initrd=/ubuntu-installer/amd64/initrd.gz ramdisk_size=16432 root=/dev/rd/0 rw --
+
+###unattended networking install ubuntu12.04 -using kickstart+preseeding
+#APPEND ks=http://172.20.100.1/ubuntu/ks2.cfg preseed/url=http://172.20.100.1/ubuntu/ps2.seed  initrd=/ubuntu-installer/amd64/initrd.gz ramdisk_size=16432 root=/dev/rd/0 rw --
+
+#	APPEND	ramdisk_size=16432 locale=en_US console-setup/layoutcode=us  netcfg/wireless_wep= netcfg/choose_interface=eth0 netcfg/get_hostname=url=http://172.20.100.1/ubuntu/ps4.cfg vga=normal initrd=/ubuntu-installer/amd64/initrd.gz -- 
+#	KERNEL vmlinuz
+#       APPEND vga=normal initrd=/ubuntu-installer/amd64/initrd.gz ks=http://192.168.19.254/ks1.cfg ramdisk_size=16432 root=/dev/rd/0 rw --
+#       APPEND initrd=/ubuntu-installer/amd64/initrd.gz vga=normal ks=http://192.168.19.254/ks2.cfg
+#       APPEND http_proxy="http://proxy.corp.anjuke.com:3128" ks=http://172.20.100.1/ubuntu/ks2.cfg vga=normal initrd=/ubuntu-installer/amd64/initrd.gz ramdisk_size=16432 root=/dev/rd/0 rw --
+
+
+
+
+#APPEND preseed/url=http://172.20.100.1/ubuntu/ps3.seed initrd=/ubuntu-installer/amd64/initrd.gz ramdisk_size=16432 root=/dev/rd/0 rw --
+#APPEND preseed/url=http://172.20.100.1/ubuntu/preseed/ubuntu-server.seed  initrd=/ubuntu-installer/amd64/initrd.gz ramdisk_size=16432 root=/dev/rd/0 rw --
+
+LABEL install_ubuntu_12.04_amd64
+      kernel /ubuntu-installer/amd64/linux
+      append ks=http://172.20.100.1/ubuntu/ks.cfg vga=normal initrd=/ubuntu-installer/amd64/initrd.gz ramdisk_size=16432 root=/dev/rd/0 rw --
