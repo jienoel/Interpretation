@@ -1164,5 +1164,120 @@ tart_1"
   514  git init
   515  git remote add
 
+  816  git s
+  817  git add doc/design.md
+  818  git commit --amend
+  819  git push -uvf origin master
+  820  git add doc/design.md
+  821  git commit --amend
+  822  git push -uvf origin master
+  823  git add doc/design.md
+  824  git commit --amend
+  825  git push -uvf origin master
+  826  cd
+  827  ls test/
+  828  cp test/pxe_config/* runway/
+  829  ls runway/
+  830  cd runway/
+  831  ls
+  832  rm -rf boot.txt
+  833  rm -rf default
+  834  ls
+  835  cd pxe_config/
+  836  ls
+  837  cd
+  838  cp test/pxe_config/* runway/pxe_config/
+  839  cd runway/pxe_config/
+  840  ls
+  841  cd
+  842  cd runway/
+  843  git s
+  844  git add pxe_config/
+  845  git commit --amend
+  846  git push -uvf
+  847  git add doc/design.md
+  848  git commit --amend
+  849  git push -uvf
+  850  git add doc/design.md
+  851  git commit --amend
+  852  git push -uvf
+  853  git add doc/design.md
+  854  git commit --amend
+  855  git push -uvf
+  856  git add README.md
+  857  git s
+  858  git commit --amend
+  859  git push -uvf
+  860  git add README.md
+  861  git commit --amend
+  862  git push -uvf
+  863  git s
+  864  cd
+  865  sudo su
+  866  cd ru
+  867  cd runway/
+  868  git s
+  869  git add pxe_config/default
+  870  git commit --amend
+  871  git push -uvf
+  872  git add pxe_config/default
+  873  git commit --amend
+  874  git push -uvf
+  875  git add pxe_config/default
+  876  git commit --amend
+  877  git push -uvf
+  878  git s
+  879  history 
+  880  tig
+  881  git s
+  882  ls -alh
+  883  git reset master^
+  884  git s
+  885  tig
+  886  git reflog
+  887  git reset --hard HEAD@{2}
+  888  tig
+  889  git s
+  890  git fetch upstream 
+  891  git fetch origin 
+  892  git diff master origin/master 
+  893  cat pxe_config/default
+  894  git diff master origin/master 
+  895  git diff master origin/master > patch
+  896  ls
+  897  git reset --hard origin/master
+  898  tig
+  899  git reset --hard upstream/master
+  900  tig
+  901  git s
+  902  rm patch 
+  903  vim pxe_config/default
+  904  tig
+  905  git reset --hard upstream/master
+  906  tig
+  907  git fetch origin 
+  908  git fetch upstream 
+  909  git reset --hard upstream/master
+  910  tig
+  911  tig --all
+  912  git remote -v
+  913  git remote set-url upstream git@git.corp.anjuke.com:_aglo/runway
+  914  git fetch upstream 
+  915  git reset --hard upstream/master
+  916  tig
+  917  git s
+  918  vim pxe_config/default
+  919  git s
+  920  git diff
+  921  git s
+  922  git add -u
+  923  git s
+  924  git ci -m 'reformat pxelinux.cfg/default'
+  925  ls
+  926  ls -alh
+  927  git push -uvf origin master 
+  928  history
+
+
 
 
