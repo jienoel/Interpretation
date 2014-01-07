@@ -1,0 +1,1168 @@
+    1  history
+    2  ls
+    3  passwd 
+    4  ifconfig
+    5  df -h
+    6  vim /etc/fstab
+    7  ls
+    8  df -h
+    9  pwd
+   10  l
+   11  cat /etc/fstab
+   12  pwd
+   13  sl
+   14  ifconfig
+   15  ifconfig eth1 10.10.3.214 netmask 255.255.255.0
+   16  route add -net 0.0.0.0/0 gw 10.10.3.27
+   17  route -n
+   18  ifconfig
+   19  df -h
+   20  curl "http://10.10.3.54"
+   21  curl "http://10.10.3.54/"
+   22  curl "http://10.10.3.56/"
+   23  curl "http://10.10.3.56/download/"
+   24  curl "http://10.10.3.56/download/ubuntu_init.sh"
+   25  curl "http://10.10.3.56/download/ubuntu_init.sh" | /bin/bash 
+   26  ifconfig
+   27  cd .ssh/
+   28  ls
+   29  cat authorized_keys 
+   30  pwd
+   31  ls
+   32  cd
+   33  ls
+   34  ps aufx | mroe
+   35  ps aufx | more
+   36  pwd
+   37  ls
+   38  ifconfig
+   39  vim /etc/fstab
+   40  vim /etc/network/interfaces 
+   41  ls
+   42  pwd
+   43  cat /etc/init.d/network-interface
+   44  cat /etc/network/interfaces 
+   45  pwd
+   46  ls
+   47  cat /etc/fstab
+   48  curl "http://10.10.3.56/download/"
+   49  curl "http://10.10.3.56/download/ubuntu_init.sh"
+   50  curl "http://10.10.3.56/download/ubuntu_init.sh" | /bin/bash 
+   51  ls
+   52  cat .ssh/
+   53  ls
+   54  cd .ssh/
+   55  ls
+   56  cat authorized_keys 
+   57  cd
+   58  ls
+   59  ifconfig
+   60  df -h
+   61  pwd
+   62  sl
+   63  df -h
+   64  free -m
+   65  df -h
+   66  cat /etc/network/interfaces 
+   67  pwd
+   68  ls
+   69  pwd
+   70  userdel anjuke
+   71  cd /home/
+   72  ls
+   73  rm -rf anjuke/
+   74  ls
+   75  init 0
+   76  cat /etc/fstab
+   77  curl "http://10.10.3.56/download"
+   78  ifconfig
+   79  df -h
+   80  vim /etc/init.d/apcinit 
+   81  init 0
+   82  ifconfig
+   83  curl "http://10.10.3.56/"
+   84  ifconfig
+   85  cd /usr/local/
+   86  ls
+   87  vim /etc/network/interfaces 
+   88  /etc/init.d/networking restart
+   89  ifconfig
+   90  ps aufx
+   91  curl "http://10.10.3.56/"
+   92  curl "http://10.10.3.56/download/"
+   93  ls
+   94  wget http://10.10.3.56/download/z.tar.gz
+   95  ls
+   96  tar -zxvf z.tar.gz 
+   97  sl
+   98  ls
+   99  rm -rf z.tar.gz 
+  100  ls
+  101  /usr/local/zabbix-agent-ops/sbin/zabbix_agentd 
+  102  id zabbix
+  103  useradd zabbix
+  104  id zabbix
+  105  ls /home/
+  106  ls
+  107  /usr/local/zabbix-agent-ops/sbin/zabbix_agent
+  108  ps aufx
+  109  /usr/local/zabbix-agent-ops/sbin/zabbix_agentd 
+  110  ls
+  111  cd ll
+  112  ll
+  113  chown -R zabbix.zabbix zabbix-agent-ops/
+  114  ll
+  115  ls
+  116  cd zabbix-agent-ops/
+  117  ls
+  118  ll
+  119  cd ..
+  120  ls
+  121  /usr/local/zabbix-agent-ops/sbin/zabbix_agentd 
+  122  ps aufx
+  123  vim /etc/rc.local 
+  124  cd /etc/rc2.d/
+  125  ls
+  126  ll
+  127  ln -sf /usr/local/zabbix-agent-ops/sbin/zabbix_agentd S02zabbix_agentd
+  128  ll
+  129  vim /etc/network/interfaces 
+  130  init 0
+  131  ls
+  132  ls /usr/local/zabbix-agent-ops/sbin/zabbix_agentd 
+  133  ls /usr/local/zabbix-agent-ops/sbin/zabbix_agentd  > 1
+  134  vim 1
+  135  vim /etc/rc.local 
+  136  ls
+  137  rm -rf 1
+  138  df -h
+  139  cd /etc/rc2.d/
+  140  ls
+  141  ll
+  142  rm -rf S02zabbix_agentd 
+  143  ls
+  144  df -h
+  145  init 0
+  146  ls
+  147  ifconfig
+  148  exit
+  149  init 0
+  150  ifconfig
+  151  telnet one-740 80
+  152  history
+ 311  sudo apt-get remove virtualbox-4.3 
+  312  cd Downloads/
+  313  ls
+  314  rm -rf virtualbox-4.3_4.3.6-91406~Ubuntu~precise_amd64.deb 
+  315  sudo apt-get update
+  316  sudo apt-get install vir
+  317  cd
+  318  sudo apt-get install virtualbox-4.3
+  319  sudo vim /var/lib/tftpboot/pxelinux.cfg/default 
+  320  cd runway/
+  321  ls
+  322  rm -rf ReadMe.md 
+  323  ls
+  324  git init
+  325  git status
+  326  git add -
+  327  git add all
+  328  git add *
+  329  git status
+  330  git commit -m "first commit "
+  331  git add *
+  332  git commit -m "first commit"
+  333  git add .gitignore
+  334  git add ReadMe.md
+  335  git add images/
+  336  git add kickstart/
+  337  git add preseed
+  338  git add preseed/
+  339  git status
+  340  ls -alh
+  341  git status
+  342  git add design.md
+  343  git add ReadMe.md
+  344  git commit -m "first commit"
+  345  git remote add origin git@git.corp.anjuke.com:Noelchen/runway
+  346  gti push -u origin master
+  347  git\ push -u origin master
+  348  git push -u origin master
+  349  git mv ReadMe.md README.md
+  350  git s
+  351  git config --global -l
+  352  git config -l
+  353  git s
+  354  git ci --amend
+  355  tig
+  356  sudo aptitude install tig
+  357  tig
+  358  git s
+  359  ls
+  360  ls -alh
+  361  git remote -v
+  362  git remote add upstream git@git.corp.anjuke.com:_aglo/runway
+  363  git s
+  364  git remote -v
+  365  git fetch upstream 
+  366  git s
+  367  git rebase -p upstream/master 
+  368  tig
+  369  git s
+  370  ls -alh
+  371  ls
+  372  git reflog
+  373  git reset --hard HEAD@{2}
+  374  tig
+  375  ls
+  376  ls -alh
+  377  find . -name '*~'
+  378  find . -name '*~' | xargs rm
+  379  ls
+  380  ls -alh
+  381  git s
+  382  git format-patch 
+  383  git format-patch master
+  384  ls
+  385  ls -alh
+  386  rm -rf .git
+  387  ls
+  388  ls -alh
+  389  rsync -av /tmp/runway/ .
+  390  ls
+  391  ls -alh
+  392  git s
+  393  git add -A
+  394  git s
+  395  git rm --cached images/Packages_demage.png
+  396  git s
+  397  git ci -m 'add script'
+  398  tig
+  399  git s
+  400  ls
+  401  ls -alh
+  402  git remote -v
+  403  git remote add upstream git@git.corp.anjuke.com:_aglo/runway
+  404  git remote set-url origin git@git.corp.anjuke.com:Noelchen/runway
+  405  git s
+  406  git remote -v
+  407  git push -uvf origin master 
+  408  tig
+  409  git reflog
+  410  ls
+  411  vim README.md 
+  412  git s
+  413  git add README.md
+  414  git s
+  415  git ci -m 'update README'
+  416  git s
+  417  git push -uv origin master 
+  418  ls
+  419  ls -alh
+  420  cd
+  421  sudo nano /etc/apt/sources.list
+  422  ssh -v Noelchen@login-pd.corp.anjuke.com
+  423  cat .ssh/config
+  424  cat > .ssh/config
+  425  vim .ssh/config
+  426  man ssh_config
+  427  ssh Noelchen@login-pd.corp.anjuke.com
+  428  man ssh
+  429  ssh Noelchen@login-pd.corp.anjuke.com
+  430  ssh -A Noelchen@login-pd.corp.anjuke.com
+  431  vim .ssh/config
+  432  ssh helloworld 
+  433  vim .ssh/config
+  434  ssh loginpd 
+  435  vim .ssh/config
+  436  vim .bashrc 
+  437  exec $SHELL -l
+  438  alias
+  439  ssh login
+  440  ssh loginpd 
+  441  sudo su - 
+  442  cd
+  443  ping one-740
+  444  ping one-740.i.ajkdns.com
+  445  sudo su - 
+  446  cd
+  447  cat .ssh/config 
+  448  ping ftp.jaist.ac.jp
+  449  sudo su
+  450  cd
+  451  ssh loginpd
+  452  vim .bashrc 
+  453  mkdir bin
+  454  exec $SHELL -l
+  455  cd
+  456  ssh root@leichen-sh.dev.anjuke.com
+  457  sudo gedit /var/lib/tftpboot/ubuntu-installer/amd64/boot-screens/txt.cfg 
+  458  route
+  459  sudo service isc-dhcp-server restart
+  460  sudo du
+  461  sudo su
+  462  clear
+  463  cd runway/
+  464  ls
+  465  git status 
+  466  git pull
+  467  git s
+  468  git add README.md
+  469  git add design.md
+  470  git rm kickstart/ks2.cfg~
+  471  git add kickstart/os_64_kickstart.cfg
+  472  git add preseed/os_64_kickstart_preseed.seed
+  473  git add preseed/os_64_preseed.seed
+  474  git s
+  475* git rm kic
+  476  git rm preseed/ps4.cfg
+  477  git s
+  478  git rm preseed/ps2.seed
+  479  git rm preseed/ps3.seed
+  480  clear
+  481  git s
+  482  git push 
+  483  git remote
+  484  git push -u origin master
+  485  git remote 
+  486  git s
+  487  git commit -m "second"
+  488  git push -u origin master
+  489  git add README.md
+  490  git commit -amend
+  491  git commit --amend
+  492  git commit --amend "second"
+  493  git commit -m "second"
+  494  reflog
+  495  git reflog
+  496  git push -u origin master
+  497  git pull
+  498  git s
+  499  git add README.md
+  500  git commit -m "secondcommit"
+  501  git push -u origin master
+  502  git pull
+  503  nano README.md
+  504  git s
+  505  git add README.md
+  506  git s
+  507  git commit --amend
+  508  git s
+  509  git push -u origin master
+  510  git pull
+  511  git fetch
+  512  git s
+  513  git add README.md
+  514  git commit -m "README"
+  515  git push -u origin master
+  516  git fetch 
+  517  git s
+  518  git add design.md
+  519  git commit -m "design_1"
+  520  git push -u origin master
+  521  git fetch 
+  522  git add design.md
+  523  git commit --amend
+  524  git commit -m "design_1"
+  525  git push
+  526  git fetch
+  527  git s
+  528  git commit -m "design_2"
+  529  git merge
+  530  git fetch
+  531  git s
+  532  git push
+  533  git pull
+  534  git s
+  535  git add design.md
+  536  git commit -m "design_2"
+  537  git push -u origin master 
+  538  git fetch
+  539  git s
+  540  git add design.md
+  541  git commit -m "design_11"
+  542  git push -u origin master 
+  543  git fetch 
+  544  git add design.md
+  545  git commit -m "design"
+  546  git push -u origin master
+  547  git fetch 
+  548  git add design.md
+  549  git commit -m "design_13"
+  550  git push -u origin master 
+  551  git fetch
+  552  git add design.md
+  553  git commit -m "design_14"
+  554  git push 
+  555  git fetch 
+  556  git add design.md
+  557  git commit -m "design_15"
+  558  git push 
+  559  git fetch 
+  560  git add design.md
+  561  git commit -m "design_16"
+  562  git push 
+  563  git fetch 
+  564  git add design.md
+  565  git commit -m "design_16"
+  566  git push 
+  567  git fetch 
+  568  git add design.md
+  569  git commit -m "design_17"
+  570  git push 
+  571  git fetch 
+  572  git add design.md
+  573  git commit -m "design_18"
+  574  git push 
+  575  git fetch 
+  576  git add design.md
+  577  git commit -m "design_19"
+  578  git push 
+  579  git fetch 
+  580  git add design.md
+  581  git commit -m "design_20"
+  582  git push 
+  583  git fetch 
+  584  git add design.md
+  585  git commit -m "design_21"
+  586  git push 
+  587  git fetch 
+  588  git add design.md
+  589  git commit -m "design_21"
+  590  git push 
+  591  git fetch 
+  592  git add design.md
+  593  git commit -m "design_21"
+  594  git push 
+  595  git fetch 
+  596  git add design.md
+  597  git commit -m "design_21"
+  598  git push 
+  599  git fetch 
+  600  git add design.md
+  601  git commit -m "design_21"
+  602  git push 
+  603  git fetch 
+  604  git add kickstart/ks2.cfg~
+  605  git s
+  606  git add kickstart/os_64_kickstart.cfg
+  607  git commit -m "kickstart"
+  608  git push
+  609  git fetch 
+  610  git add kickstart/os_64_kickstart.cfg
+  611  git commit -m "kicks
+tart_1"
+  612  git push
+  613  git fetch 
+  614  git add kickstart/os_64_kickstart.cfg
+  615  git commit -m "kicks
+tart_1"
+  616  git push
+  617  git fetch
+  618  git commit -m "finish_first"
+  619  git s
+  620  git add design.md
+  621  git commit -m "finish first part"
+  622  git push
+  623  cd
+  624  sudo sysctl net.ipv4.ip_forward 
+  625  cd runway/
+  626  ls
+  627  git s
+  628  git add doc/
+  629  git fetch
+  630  git s
+  631  git rm design.md
+  632  git s
+  633  git commit -m "add the settings of virtualbox"
+  634  git push
+  635  git fetch 
+  636  ls
+  637  git s
+  638  rm -rf ReadMe.md 
+  639  ls
+  640  rm -rf design.md~ 
+  641  ls
+  642  git s
+  643  git push -u origin master
+  644  git fetch
+  645  git add doc/virtualboxsettings.md
+  646  git s
+  647  git commit -m "modify virtualboxsettings"
+  648  git push -u origin master
+  649  git add doc/virtualboxsettings.md
+  650  git commit --amend "modify virtualboxsettings"
+  651  git commit --amend 
+  652  git s
+  653  git fetch 
+  654  git s
+  655  git push
+  656  git pull
+  657  git s
+  658  git push
+  659  git fetch 
+  660  git add doc/virtualboxsettings.md
+  661  git commit -m "modify virtualboxsettings1"
+  662  git push
+  663  ls
+  664  tig
+  665  ls
+  666  tig
+  667  git format-patch --help
+  668  tig
+  669  git s
+  670  git remote -v
+  671  git fetch upstream
+  672  tig
+  673  git log upstream/master..master
+  674  git format-patch upstream/master..master
+  675  cat 0001-add-script.patch
+  676  ls
+  677  git s
+  678  tig
+  679  git reset --hard upstream/master
+  680  tig
+  681  ls
+  682  ls -alh
+  683  git s
+  684  rm README.md~ doc/ kickstart/
+  685  rm -rf README.md~ doc/ kickstart/
+  686  ls
+  687  ls -alh
+  688  git am *.patch
+  689  git s
+  690  git am 0001-add-script.patch
+  691  git am --help
+  692  git am --abort
+  693  tig
+  694  git s
+  695  git am 0001-add-script.patch
+  696  git s
+  697  less 0001-add-script.patch
+  698  git apply 0001-add-script.patch
+  699  git s
+  700  ls
+  701  ls -alh
+  702  rm -rf kickstart preseed .gitignore
+  703  git s
+  704  git apply --check 0001-add-script.patch
+  705  ls
+  706  rm design.md 
+  707  git s
+  708  git apply --check 0001-add-script.patch
+  709  echo $?
+  710  git apply --check 0001-add-script.patch
+  711  echo $?
+  712  git apply 0001-add-script.patch
+  713  git s
+  714  ls
+  715  ls -alh
+  716  less 0001-add-script.patch
+  717  git s
+  718  tig
+  719  git s
+  720  git reset --hard upstream/master 
+  721  ls
+  722  ls -alh
+  723  git apply 0001-add-script.patch
+  724  git s
+  725  tig
+  726  git apply 0002-update-README.patch
+  727  git s
+  728  git reset --hard upstream/master 
+  729  git apply *.patch
+  730  git reset --hard upstream/master 
+  731  tig
+  732  ls
+  733  ls -alh
+  734  rm -rf kickstart preseed .gitignore design.md
+  735  git s
+  736  git apply *.patch
+  737  ls
+  738  ls -alh
+  739  git reset --hard upstream/master 
+  740  rm -rf kickstart preseed .gitignore design.md
+  741  ls
+  742  ls -alh
+  743  less 0002-update-README.patch
+  744  git apply 0001-add-script.patch
+  745  git reset --hard upstream/master 
+  746  rm -rf kickstart preseed .gitignore design.md
+  747  ls
+  748  ls -alh
+  749  git s
+  750  git apply 0001-add-script.patch
+  751  ls -alh
+  752  git apply 0002-update-README.patch
+  753  git apply 0003-second.patch
+  754  git s
+  755  git apply 0004-second.patch
+  756  less 0004-second.patch 
+  757  ls
+  758  git reset --hard upstream/master 
+  759  rm -rf kickstart preseed .gitignore design.md
+  760  ls
+  761  ls -alh
+  762  git apply  0001-add-script.patch
+  763  ls
+  764  tree
+  765  sudo aptitude install tree
+  766  tree
+  767  git apply 0002-update-README.patch
+  768  tree
+  769  git apply 0003-second.patch
+  770  tree
+  771  less 0003-second.patch
+  772  less 0004-second.patch 
+  773  ls
+  774  ls -alh'
+  775  ls
+  776  git reset --hard upstream/master 
+  777  rm -rf kickstart preseed .gitignore design.md
+  778  rm *.patch
+  779  ls
+  780  ls -alh
+  781  tig
+  782  git remote v
+  783  git remote -v
+  784  git fetch origin 
+  785  git reset --hard origin/master
+  786  tig
+  787  ls
+  788  ls -lah
+  789  rsync --av --exclude=.git . /tmp/test/
+  790  rsync -av --exclude=.git . /tmp/test/
+  791  ls
+  792  ls -alh
+  793  tig
+  794  git reset --hard upstream/master 
+  795  tig
+  796  rsync -av --exclude=.git /tmp/test/ .
+  797  git s
+  798  git diff 
+  799  git add -u
+  800  git s
+  801  git add .gitignore
+  802  git add doc/
+  803  git add kickstart/
+  804  git add preseed/
+  805  git s
+  806  tig
+  807  vim README.md 
+  808  git s
+  809  git add -u
+  810  git ci -m 'add scripts'
+  811  tig
+  812  git s
+  813  git push -uv origin master 
+  814  git push -uvf origin master 
+  815  tig
+  816  git log
+  817  tig
+  818  clear
+  819  history
+
+
+   16  ls
+   17  cat > id_rsa
+   18  cat > id_rsa.pub
+   19  ls
+   20  ls -alh
+   21  chmod 600 *
+   22  ls
+   23  ls -alh
+   24  chmod 644 id_rsa.pub
+   25  ls
+   26  ls -alh
+   27  cd
+   28  sudo su - 
+   29  vim .bashrc 
+   30  cd
+   31  vim
+   32  vim .bashrc 
+   33  echo $SSH_AGENT_PID 
+   34  ps x
+   35  ssh-add -l
+   36  ssh-add -L
+   37  cd
+   38  echo $SSH_AGENT_PID 
+   39  ssh-add -l
+   40  ssh -i /home/noel/.ssh/old/id_rsa git@git.corp.anjuke.com
+   41  ssh -vi /home/noel/.ssh/old/id_rsa git@git.corp.anjuke.com
+   42  vim .bashrc 
+   43  keychain .ssh/old/id_rsa
+   44  keychain -q .ssh/old/id_rsa
+   45  keychain .ssh/old/id_rsa
+   46  gedit .ssh/id_rsa.pub 
+   47  mkdir -p github
+   48  cd github
+   49  git init
+   50  git remote add origin https://github.com/jienoel/Interpretaion
+   51  git clone https://github.com/jienoel/Interpretation
+   52  ls
+   53  cd
+   54  cd github/
+   55  cd I
+   56  cd Interpretation/
+   57  ls
+   58  cd
+   59  cd github/
+   60  ls
+   61  git clone https://github.com/jienoel/Interpretation/tree/shell
+   62  git remote add origin_shell https://github.com/jienoel/Interpretation/tree/shell
+   63  git clone https://github.com/jienoel/Interpretation/tree/shell
+   64  cd
+   65  ls
+   66  cd github/
+   67  ls
+   68  cd I
+   69  cd Interpretation/
+   70  ls
+   71  gedit virtualBox_install.md 
+   72  cd
+   73  sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian precise contrib">>/etc/apt/sources.list'
+   74  nano /etc/apt/sources.list
+   75  wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -0- | sudo apt-key add -
+   76  wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -0- > ./key_virtualBox
+   77  sudo apt-key add key_virtualBox
+   78  ifconfig
+   79  dhclient
+   80  sudo dhclient
+   81  dhclient -d
+   82  sudo dhclient -d
+   83  sudo dhclient
+   84  sudo dhclient -d
+   85  echo key_virtualBox 
+   86  locate key_virtualBox
+   87  ./key_virtualBox
+   88  sudo ./key_virtualbox
+   89  sudo nano ./key_virtualBox 
+   90  rm -rf ./key_virtualBox 
+   91  wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -o- | sudo apt-key add -
+   92  sudo nano /etc/apt/sources.list
+   93  sudo apt-key add oracle_vbox.asc
+   94  sudo apt-get update 
+   95  sudo apt-get install virtualbox-4.3
+   96  sudo nano /etc/apt/sources.list
+   97  wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -0- | sudo apt-key add -
+   98  locate oracle_vbox.asc
+   99  touch oracle_vbox.asc
+  100  oracle_vbox.asc
+  101  gedit oracle_vbox.asc 
+  102  sudo apt-key add oracle_vbox.asc
+  103  sudo apt-get update
+  104  sudo nano /etc/apt/s
+  105  sudo nano /etc/apt/sources.list
+  106  sudo apt-get update
+  107  sudo nano /etc/apt/sources.list
+  108  sudo apt-get update
+  109  sudo nano /etc/apt/sources.list
+  110  sudo apt-get update
+  111  sudo nano /etc/apt/sources.list
+  112  sudo apt-get update
+  113  ls
+  114  cd gitcorp/
+  115  ls
+  116  cd backup/
+  117  ls
+  118  cd auto_install/
+  119  ls
+  120  cd pre_install/
+  121  ls
+  122  gedit Princple.md
+  123  cd
+  124  sudo su
+  125  sudo apt-get install tftpd-hpa
+  126  ls /var/lib/dpkg/
+  127  sudo /etc/init.d/isc-dhcp-server stop
+  128  pu 
+  129  ps -aux
+  130  top
+  131  sudo su
+  132  cd
+  133  telnet 10.10.3.239 22
+  134  ssh Noelchen@login-pd.corp.anjuke.com
+  135  cat .ssh/id_rsa.pub 
+  136  sudo su - 
+  137  cat .ssh/id_rsa.pub | xclip -i
+  138  sudo su - 
+  139  cat .ssh/id_rsa.pub 
+  140  cd
+  141  ssh-keygen -t dsa
+  142  ls
+  143  cat .ssh/id_dsa
+  144  cat .ssh/id_dsa.pub 
+  145  cd
+  146  ssh Noelchen@login-pd.corp.anjuke.com
+  147  p
+  148  ssh Noelchen@login-pd.corp.anjuke.com
+  149  vim .bashrc 
+  150  cd
+  151  ssh-add -l
+  152  cd
+  153  ssh root@leichen-sh.dev.anjuke.com
+  154  sudo apt-get update 
+  155  sudo apt-get install 
+  156  ifconfig
+  157  sudo nano /etc/apt/sources.list
+  158  sudo apt-get update
+  159  sudo apt-get install virtualbox-4.3
+  160  wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -0- | sudo apt-key add -
+  161  wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -o- | sudo apt-key add -
+  162  apt-key 
+  163  sudo apt-key list
+  164  sudo nano oracle_vbox.asc
+  165  ls
+  166  sudo nano oracle_vbox.asc.1 
+  167  rm -rf oracle_vbox.asc.1 
+  168  ls
+  169  sudo apt-key add oracle_vbox.asc 
+  170  sudo apt-key list
+  171  sudo nano /etc/apt/sources.list
+  172  sudo apt-get update 
+  173  sudo apt-get install virtualbox-4.3
+  174  sudo apt-get libvpx1
+  175  sudo apt-get install libvpx1
+  176  sudo apt-get isntall dkms
+  177  sudo cp /etc/apt/sources.list /etc/apt/sources.list_backup1
+  178  gksu gedit /etc/apt/sources.list
+  179  sudo apt-get update
+  180  sudo apt-get install virtualbox-4.3
+  181  sudo apt-get update
+  182  sudo apt-get install tftpd-hpa
+  183  sudo vim /etc/default/tftpd-hpa 
+  184  chmod 777 /var/lib/tftpboot/
+  185  sudo chmod 777 /var/lib/tftpboot/
+  186  sudo /etc/init.d/tftpd-hpa restart
+  187  sudo apt-get install apache2
+  188  sudo /etc/init.d/apache2 start
+  189  ifconfig
+  190  sudo su
+  191  cp Downloads/ubuntu-12.04.3-desktop-amd64.iso ubuntu_12.04_amd64.iso
+  192  ls
+  193  sudo su
+  194  sudo mount -o loop Downloads/ubuntu_12.04.3_desktop_amd64.iso /mnt/ubuntu
+  195  sudo mount -o loop Downloads/ubuntu-12.04.3-desktop-amd64.iso /mnt/ubuntu
+  196  ls /mnt/ubuntu/
+  197  ls /mnt/ubuntu/install/
+  198  locate netboot
+  199  sudo su
+  200  ssh Noelchen@login-pd.corp.anjuke.com
+  201  ssh -v Noelchen@login-pd.corp.anjuke.com
+  202  ssh -A Noelchen@login-pd.corp.anjuke.com
+  203  sudo nano /.bashrc
+  204  sudo nano ~/.bashrc 
+  205  ssh -A Noelchen@login-pd.corp.anjuke.com
+  206  ssh -v Noelchen@login-pd.corp.anjuke.com
+  207  ssh Noelchen@login-pd.corp.anjuke.com
+  208  cd
+  209  ls
+  210  cd Downloads/
+  211  ls
+  212  scp root@leichen-sh.dev.anjuke.com:/home/aleiphoenix/Downloads/systemrescuecd-x86-3.8.1.iso .
+  213  cd
+  214  ssh root@leichen-sh.dev.anjuke.com
+  215  cd
+  216  sudo su - 
+  217  ls /mnt/ubuntu/
+  218  umount /mnt/ubuntu 
+  219  sudo umount /mnt/ubuntu/
+  220  ls /mnt/ubuntu/
+  221  ls
+  222  cd Downloads/
+  223  ls
+  224  cd
+  225  mount -o loop ubuntu-12.04.3-alternate-amd64.iso /mnt/ubuntu
+  226  sudo mount -o loop ubuntu-12.04.3-alternate-amd64.iso /mnt/ubuntu
+  227  sudo mount -o loop Dwonloads/ubuntu-12.04.3-alternate-amd64.iso /mnt/ubuntu
+  228  cp Downloads/ubuntu-12.04.3-alternate-amd64.iso ubuntu.iso
+  229  ls
+  230  mount -o loop ubuntu.iso /mnt/ubuntu/
+  231  sudo mount -o loop ubuntu.iso /mnt/ubuntu/
+  232  ls /mnt/ubuntu/
+  233  ls /mnt/ubuntu/install/
+  234  sudo su
+  235  history
+  236  sudo su
+  237  iptables -t nat  -xvnl
+  238  sudo iptables -t nat -xvnl
+  239  iptables -t nat
+  240  iptables -t -xvnl
+  241  sudo su
+  242  cd github/
+  243  ls
+  244  git status 
+  245  git add backup/
+  246  git add Interpretation/
+  247  git commit -m "auto_install"
+  248  git push -u origin master
+  249  git remote 
+  250  git remote --help
+  251  git remote -rm origin_shell
+  252  git remote rm origin_shell
+  253  git remote
+  254  git push -u origin master
+  255  git status
+  256  cd
+  257  ls
+  258  cp github/ github_backup/
+  259  cp github github_backup/
+  260  cp /github github_backup
+  261  mkdir -p github_backup
+  262  cp github github_backup
+  263  cp ./github github_backup
+  264  rm -rf github_backup/
+  265  cd github
+  266  ls
+  267  git status
+  268  git remote 
+  269  git remote rm origin
+  270  git remote
+  271  git remote add origin https://github.com/jienoel/Interpretation
+  272  git push -u origin master
+  273  git pull
+  274  git pull origin master
+  275  git merge
+  276  git status
+  277  git push origin master
+  278  cd
+  279  git config --global -l
+  280  git config --global user.name Noelchen
+  281  git config --global user.email noelchen@anjuke.com
+  282  git config --global color.ui true
+  283  git config --global alias.s status
+  284  git config --global alias.st stash
+  285  git config --global alias.ci commit
+  286  git config --global alias.co checkout
+  287  git config --global alias.br branch
+  288  git config --global alias.re remote
+  289  cd
+  290  sudo su - 
+  291  cd /tmp/
+  292  ls
+  293  git clone git@git.corp.anjuke.com:_aglo/runway
+  294  cd runway/
+  295  ls
+  296  pwd
+  297  cd
+  298  ls
+  299  ssh root@leichen-sh.dev.anjuke.com
+  300  sudo su - 
+  301  cd /home
+  302  ls
+  303  cd
+  304  ls
+  305  cd -
+  306  cd home/.config/
+  307  sudo ./virtualbox.run uninstall
+  308  sudo ./VirtualBox.run uninstall
+  309  sudo apt-get install vir
+  310  sudo apt-get remove vir
+  311  sudo apt-get remove virtualbox-4.3 
+  312  cd Downloads/
+  313  ls
+  314  rm -rf virtualbox-4.3_4.3.6-91406~Ubuntu~precise_amd64.deb 
+  315  sudo apt-get update
+  316  sudo apt-get install vir
+  317  cd
+  318  sudo apt-get install virtualbox-4.3
+  319  sudo vim /var/lib/tftpboot/pxelinux.cfg/default 
+  320  cd runway/
+  321  ls
+  322  rm -rf ReadMe.md 
+  323  ls
+  324  git init
+  325  git status
+  326  git add -
+  327  git add all
+  328  git add *
+  329  git status
+  330  git commit -m "first commit "
+  331  git add *
+  332  git commit -m "first commit"
+  333  git add .gitignore
+  334  git add ReadMe.md
+  335  git add images/
+  336  git add kickstart/
+  337  git add preseed
+  338  git add preseed/
+  339  git status
+  340  ls -alh
+  341  git status
+  342  git add design.md
+  343  git add ReadMe.md
+  344  git commit -m "first commit"
+  345  git remote add origin git@git.corp.anjuke.com:Noelchen/runway
+  346  gti push -u origin master
+  347  git\ push -u origin master
+  348  git push -u origin master
+  349  git mv ReadMe.md README.md
+  350  git s
+  351  git config --global -l
+  352  git config -l
+  353  git s
+  354  git ci --amend
+  355  tig
+  356  sudo aptitude install tig
+  357  tig
+  358  git s
+  359  ls
+  360  ls -alh
+  361  git remote -v
+  362  git remote add upstream git@git.corp.anjuke.com:_aglo/runway
+  363  git s
+  364  git remote -v
+  365  git fetch upstream 
+  366  git s
+  367  git rebase -p upstream/master 
+  368  tig
+  369  git s
+  370  ls -alh
+  371  ls
+  372  git reflog
+  373  git reset --hard HEAD@{2}
+  374  tig
+  375  ls
+  376  ls -alh
+  377  find . -name '*~'
+  378  find . -name '*~' | xargs rm
+  379  ls
+  380  ls -alh
+  381  git s
+  382  git format-patch 
+  383  git format-patch master
+  384  ls
+  385  ls -alh
+  386  rm -rf .git
+  387  ls
+  388  ls -alh
+  389  rsync -av /tmp/runway/ .
+  390  ls
+  391  ls -alh
+  392  git s
+  393  git add -A
+  394  git s
+  395  git rm --cached images/Packages_demage.png
+  396  git s
+  397  git ci -m 'add script'
+  398  tig
+  399  git s
+  400  ls
+  401  ls -alh
+  402  git remote -v
+  403  git remote add upstream git@git.corp.anjuke.com:_aglo/runway
+  404  git remote set-url origin git@git.corp.anjuke.com:Noelchen/runway
+  405  git s
+  406  git remote -v
+  407  git push -uvf origin master 
+  408  tig
+  409  git reflog
+  410  ls
+  411  vim README.md 
+  412  git s
+  413  git add README.md
+  414  git s
+  415  git ci -m 'update README'
+  416  git s
+  417  git push -uv origin master 
+  418  ls
+  419  ls -alh
+  420  cd
+  421  sudo nano /etc/apt/sources.list
+  422  ssh -v Noelchen@login-pd.corp.anjuke.com
+  423  cat .ssh/config
+  424  cat > .ssh/config
+  425  vim .ssh/config
+  426  man ssh_config
+  427  ssh Noelchen@login-pd.corp.anjuke.com
+  428  man ssh
+  429  ssh Noelchen@login-pd.corp.anjuke.com
+  430  ssh -A Noelchen@login-pd.corp.anjuke.com
+  431  vim .ssh/config
+  432  ssh helloworld 
+  433  vim .ssh/config
+  434  ssh loginpd 
+  435  vim .ssh/config
+  436  vim .bashrc 
+  437  exec $SHELL -l
+  438  alias
+  439  ssh login
+  440  ssh loginpd 
+  441  sudo su - 
+  442  cd
+  443  ping one-740
+  444  ping one-740.i.ajkdns.com
+  445  sudo su - 
+  446  cd
+  447  cat .ssh/config 
+  448  ping ftp.jaist.ac.jp
+  449  sudo su
+  450  cd
+  451  ssh loginpd
+  452  vim .bashrc 
+  453  mkdir bin
+  454  exec $SHELL -l
+  455  cd
+  456  ssh root@leichen-sh.dev.anjuke.com
+  457  ls
+  458  cd runway/
+  459  ls
+  460  rm -rf images/
+  461  ifconfig
+  462  cd
+  463  sudo su
+  464  sudo su
+  465  cd
+  466  cd /tmp/
+  467  ls
+  468  MKDIR TEST
+  469  mkdir test
+  470  cd test/
+  471  ls
+  472  git init
+  473  touch README
+  474  git add README
+  475  git s
+  476  git ci -m 'init'
+  477  ls
+  478  ls -alh
+  479  echo 1 > README 
+  480  git add -u
+  481  git ci -m 'update README'
+  482  tig
+  483  echo 2 >> README 
+  484  git add -u
+  485  git ci -m 'update README'
+  486  tig
+  487  git s
+  488  tig
+  489  git reset master^
+  490  git s
+  491  cat README 
+  492  tig
+  493  man git-commit
+  494  git s
+  495  git add -u
+  496  git ci --amend
+  497  ls -alh /home/noel/.nano_history
+  498  sudo chown noel:noel /home/noel/.nano_history
+  499  ls
+  500  tig
+  501  ls
+  502  ls -alh
+  503  rm -rf *
+  504  rm -rf .git
+  505  ls
+  506  ls -alh
+  507  pwd
+  508  ls
+  509  ls -alh
+  510  cd
+  511  cd /tmp/test/
+  512  ls
+  513  git fetch
+  514  git init
+  515  git remote add
+
+
+
