@@ -1,0 +1,10 @@
+- name: vagrant-ansible playbook tester
+#  hosts: vagrant
+  hosts: all
+  user: vagrant
+  sudo: True
+  gather_facts: False
+  roles:
+#    - <put some test roles here>
+     - lamp 
+#     - apt

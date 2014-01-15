@@ -1,0 +1,10 @@
+---
+   - name: install vim / git /vagrant
+     apt: pkg=$item state=present
+     with_items:
+       - vim
+       - git
+       - virtualbox-4.3
+       - vagrant
+
+

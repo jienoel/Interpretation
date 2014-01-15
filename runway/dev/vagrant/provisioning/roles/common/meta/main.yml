@@ -1,0 +1,10 @@
+---
+  dependencies:
+    - { role: apt }
+    - { role: sslcerts }
+    - { role: timezone }
+    - { role: ntp }
+    - { role: hostname }
+    - { role: sshd }
+    - { role: iptables }
+    - { role: fail2ban }

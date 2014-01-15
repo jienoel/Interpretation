@@ -1,0 +1,6 @@
+---
+  - name: common | security.yml >> prevent ip spoof
+    lineinfile: dest=/etc/host.conf regexp="^order" line="order bind,hosts" state=present
+
+  - name: common | security.yml >> prevent ip spoof
+    lineinfile: dest=/etc/host.conf regexp="^nospoof" line="nospoof on" state=present

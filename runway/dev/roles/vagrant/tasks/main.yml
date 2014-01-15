@@ -1,0 +1,18 @@
+---
+   - name: Download vagrant file
+     get_url: dest=/var/tmp/vagrant.deb
+       url=https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.3_x86_64.deb
+   - name: Install vagrant
+     command: dpkg --skip-same-version -i /var/tmp/vagrant.deb
+     register: dpkg_result
+     changed_when: "dpkg_result.stdout.startswith('Selecting')"
+   - name: mkdir vagrant directory
+     file: path=pxe_server state=directory owner=root group=root mode=0665
+   - name: copy files to vagrant directory
+     copy: src=$item dest=pxe_server/$item mode=775 owner=root group=root
+     tags:
+       - copy 
+     with_items:
+       - Vagrantfile 
+       - vagrant_ansible_inventory_default
+

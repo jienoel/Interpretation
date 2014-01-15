@@ -1,0 +1,99 @@
+---
+  - name: 1. install DHCP
+    apt: name=isc-dhcp-server state=present
+
+  - name: 2. config DHCP
+    copy: src=dhcpd.conf dest=/etc/dhcp/dhcpd.conf
+
+  - name: 3. start DHCP
+    service: name=isc-dhcp-server state=restarted 
+  
+  - name: 4. install TFTP
+    apt: name=tftpd-hpa state=present
+
+  - name: 5. config tftp
+    copy: src=tftpd-hpa dest=/etc/default/tftpd-hpa 
+
+  - name: 6.0  touch /var/lib/tftpboot
+   # file: src=pxelinux.cfg dest=/var/lib/tftpboot/pxelinux.cfg force=yes 
+    file: path=/var/lib/tftpboot state=directory owner=root group=root mode=0777
+
+#  - name: 6. mkdir /var/lib/tftpboot
+#   # file: src=pxelinux.cfg dest=/var/lib/tftpboot/pxelinux.cfg force=yes 
+#    file: path=/var/lib/tftpboot state=directory owner=root group=root mode=0777
+  
+  - name: 6.1 config tftpboot
+    copy: src=tftpboot/$item dest=/var/lib/tftpboot/$item mode=775 owner=root group=root
+    tags:
+      - copy 
+    with_items:
+      - version.info 
+      - pxelinux.0
+
+  - name: 6.11 copy kernel
+    file: path=/var/lib/tftpboot/ubuntu state=directory owner=root group=root mode=0777
+  
+  - name: 6.12 copy kernel
+    file: path=/var/lib/tftpboot/ubuntu/precise state=directory owner=root group=root mode=0777
+
+  - name: 6.13 copy kernel
+    file: path=/var/lib/tftpboot/ubuntu/precise/amd64 state=directory owner=root group=root mode=0777
+
+
+  - name: 6.14 copy pxelinux.cfg
+    copy: src=tftpboot/ubuntu/precise/amd64/$item dest=/var/lib/tftpboot/ubuntu/precise/amd64/$item mode=775 owner=root group=root
+    with_items:
+      - linux
+      - initrd.gz
+
+  - name: 6.15 copy kernel
+    file: path=/var/lib/tftpboot/ubuntu/precise/i386 state=directory owner=root group=root mode=0777
+
+ 
+  - name: 6.16 copy pxelinux.cfg
+    copy: src=tftpboot/ubuntu/precise/i386/$item dest=/var/lib/tftpboot/ubuntu/precise/i386/$item mode=775 owner=root group=root
+    with_items:
+      - linux
+      - initrd.gz
+
+  - name: 6.2 touch pxelinux.cfg
+    file: path=/var/lib/tftpboot/pxelinux.cfg state=directory owner=root group=root mode=0777
+
+  - name: 6.4 copy pxelinux.cfg
+    copy: src=tftpboot/pxelinux.cfg/$item dest=/var/lib/tftpboot/pxelinux.cfg/$item mode=775 owner=root group=root
+    with_items:
+      - boot.txt
+      - default
+  
+# local_action: command rsync -a roles/lamp/files/tftpboot/pxelinux.cfg /var/lib/tftpboot
+   #file: src=pxelinux.cfg dest=/var/lib/tftpboot/pxelinux.cfg force=yes 
+#    copy: >
+#         src=$item
+#         dest=/var/lib/tftpboot/
+#    with_fileglob:
+#        - tftpboot/*
+
+  - name: 7. config tftpboot 
+    file: src=pxelinux.0 dest=/var/lib/tftpboot/pxelibux.0 force=yes
+
+  - name: 8. start TFTP
+    service: name=tftpd-hpa state=restarted 
+
+  - name: 9.  install Apache
+    apt: name=apache2 state=present
+
+#  - name:  install PHP module for Apache
+#    apt: name=libapache2-mod-php5 state=present
+
+  - name: 10. start Apache
+    service: name=apache2 state=running 
+
+  - name: 11. add script to apache server
+    copy: src=os_preseed.seed dest=/var/www/os_preseed.seed 
+#  - name:  install Hello World PHP script
+#    copy: src=index.php dest=/var/www/index.php mode=0664
+# 
+#  - name: install vim 
+#    apt: pkg=vim state=present
+#
+#

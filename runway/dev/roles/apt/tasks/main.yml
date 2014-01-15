@@ -1,0 +1,20 @@
+---
+  - name: apt | main.yml >> ensure apt sources.list present
+    copy: src=Ubuntu/precise/sources1.list dest=/etc/apt/sources.list mode=0644 owner=root group=root backup=yes
+    #copy: src=Ubuntu/precise/sources.list dest=/etc/apt/sources.list mode=0644 owner=root group=root backup=yes
+    #copy: src={{ ansible_distribution }}/{{ ansible_distribution_release }}/sources.list dest=/etc/apt/sources.list mode=0644 owner=root group=root backup=yes
+    environment: env.proxies
+    tags: apt
+
+  - name: apt | main.yml >> update apt package cache
+    apt: update_cache=yes cache_valid_time={{ apt.cache_valid_time }}
+    environment: env.proxies
+    tags: apt
+
+#  - name: apt | main.yml >> upgrade installed packages
+#    apt: upgrade=full
+#    environment: env.proxies
+#    when: apt.should_upgrade
+#    tags: apt
+
+

@@ -1,0 +1,23 @@
+deb-src http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ precise main restricted multiverse universe
+deb http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ precise-updates main restricted multiverse universe
+deb-src http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ precise-updates main restricted multiverse universe
+deb http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ precise-backports main restricted universe multiverse
+deb-src http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ precise-backports main restricted universe multiverse
+deb http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ precise-proposed main restricted universe multiverse
+deb-src http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ precise-proposed main restricted universe multiverse
+deb http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ precise-security main restricted universe multiverse
+deb-src http://ftp.jaist.ac.jp/pub/Linux/ubuntu/ precise-security main restricted universe multiverse
+
+deb http://mirror.corp.anjuke.com/getdeb/packages.deepin.org/deepin/ precise main non-free
+deb http://mirror.corp.anjuke.com/getdeb/download.virtualbox.org/virtualbox/debian precise contrib non-free
+deb http://mirror.corp.anjuke.com/getdeb/ppa.launchpad.net/fcitx-team/nightly/ubuntu precise main
+deb http://mirror.corp.anjuke.com/getdeb/ppa.launchpad.net/mozillateam/firefox-next/ubuntu precise main
+deb http://mirror.corp.anjuke.com/getdeb/ppa.launchpad.net/gtg/ppa/ubuntu precise main
+deb http://mirror.corp.anjuke.com/ubuntu/ precise main restricted universe multiverse
+deb http://mirror.corp.anjuke.com/ubuntu/ precise-updates main restricted universe multiverse
+deb http://mirror.corp.anjuke.com/ubuntu/ precise-security main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu precise multiverse
+
+deb http://download.virtualbox.org/virtualbox/debian precise contrib
+
+

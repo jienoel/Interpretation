@@ -1,0 +1,53 @@
+---
+- name: vagrant-ansible playbook tester
+  hosts: localhost
+  user: root
+  sudo: True
+  gather_facts: False
+  tasks:
+   - name: install vim / git 
+     apt: pkg=$item state=present
+     with_items:
+       - vim
+       - git
+     tags: vim
+           git
+   - name: Download virtualbox file
+     get_url: dest=/var/tmp/virtualbox-4.3.deb
+       url=http://download.virtualbox.org/virtualbox/4.3.6/virtualbox-4.3_4.3.6-91406~Ubuntu~precise_amd64.deb
+
+   - name: Install virtualbox
+     command: dpkg --skip-same-version -i /var/tmp/virtualbox-4.3.deb
+     register: dpkg_result
+     changed_when: "dpkg_result.stdout.startswith('Selecting')"
+
+   - name: Download vagrant file
+     get_url: dest=/var/tmp/vagrant.deb
+       url=https://dl.bintray.com/mitchellh/vagrant/vagrant_1.4.3_x86_64.deb
+
+   - name: Install vagrant
+     command: dpkg --skip-same-version -i /var/tmp/vagrant.deb
+     register: dpkg_result
+     changed_when: "dpkg_result.stdout.startswith('Selecting')"
+
+   - name: mkdir vagrant directory
+     file: path=pxe_server state=directory owner=root group=root mode=0665
+
+   - name: copy files to vagrant directory
+     copy: src=vagrant/$item dest=pxe_server/$item mode=775 owner=root group=root
+     tags:
+       - copy 
+     with_items:
+       - Vagrantfile 
+       - vagrant_ansible_inventory_default
+
+  roles:
+#    - <put some test roles here>
+#     - lamp 
+#     - apt
+#     - $role
+      - apt
+#     - common
+#     - pxe_server
+#     - vagrant
+#     - virtualbox
