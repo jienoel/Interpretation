@@ -1277,6 +1277,33 @@ tart_1"
   926  ls -alh
   927  git push -uvf origin master 
   928  history
+  
+    1  exit
+    2  cd /usr/local/lib/python2.7/dist-packages/Flask_Login-0.1.3-py2.7.egg/
+    3  ls
+    4  ls -alh
+    5  rm flask_login.pyc
+    6  vim flask_login.py
+    7  vim ~/.vimrc
+    8  wget https://raw.github.com/aleiphoenix/dotfiles/vim/vimrc -O ~/.vimrc
+    9  wget https://raw.github.com/aleiphoenix/dotfiles/master/vim/vimrc -O ~/.vimrc
+   10  vim /root/.vimrc 
+   11  vim flask_login.py
+   12  python
+   13  cd
+   14  cd /tmp/
+   15  ls
+   16  python
+   17  PYTHONPATH="/tmp/2" python
+   18  ls
+   19  touch a.py
+   20  vim a.py 
+   21  python
+   22  ls
+   23  rm a.py
+   24  rm a.pyc 
+   25  ls
+
 
 
 
